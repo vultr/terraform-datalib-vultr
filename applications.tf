@@ -8,10 +8,6 @@ locals {
   app_zipped		= zipmap(local.deploy_names, local.app_ids)
 }
 
-output "app_zipped" {
-  value = local.app_zipped
-}
-
 output "docker_ubuntu_1804_x64" {
   value = local.app_zipped["Docker on Ubuntu 18.04 x64"]
 }
