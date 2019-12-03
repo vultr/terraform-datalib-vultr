@@ -8,7 +8,7 @@ I frequently find myself curling the public api endpoints to find App/OS/Region 
 
 ## Usage
 Import the module like you would any other TF Module:
-```
+```hcl
 module "vultr_lib" {
   source = "github.com/Oogy/terraform-datalib-vultr"
 }
@@ -16,7 +16,7 @@ module "vultr_lib" {
 
 Use human readable module output names in place of Application, OS, or Region ID's:
 
-```
+```hcl
 resource "vultr_server" "server0" {
   plan_id = "201"
   region_id = module.vultr_lib.new_jersey
