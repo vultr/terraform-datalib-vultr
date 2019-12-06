@@ -10,7 +10,7 @@ This module will remove the need to curl the public api endpoints to find App/OS
 Import the module like you would any other TF Module:
 ```hcl
 module "vultr_lib" {
-  source = "github.com/Oogy/terraform-datalib-vultr"
+  source = "github.com/vultr/terraform-datalib-vultr"
 }
 ```
 
