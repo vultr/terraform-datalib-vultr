@@ -44,10 +44,6 @@ output "application" {
   value = local.os_zipped["Application"]
 }
 
-output "debian_8_x64" {
-  value = local.os_zipped["Debian 8 x64 (jessie)"]
-}
-
 output "debian_8_i386" {
   value = local.os_zipped["Debian 8 i386 (jessie)"]
 }
@@ -74,10 +70,6 @@ output "debian_9_x64" {
 
 output "ubuntu_1804_x64" {
   value = local.os_zipped["Ubuntu 18.04 x64"]
-}
-
-output "fedora_29_x64" {
-  value = local.os_zipped["Fedora 29 x64"]
 }
 
 output "freebsd_12_x64" {
