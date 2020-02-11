@@ -76,10 +76,6 @@ output "freebsd_12_x64" {
   value = local.os_zipped["FreeBSD 12 x64"]
 }
 
-output "ubuntu_1904_x64" {
-  value = local.os_zipped["Ubuntu 19.04 x64"]
-}
-
 output "openbsd_65_x64" {
   value = local.os_zipped["OpenBSD 6.5 x64"]
 }
