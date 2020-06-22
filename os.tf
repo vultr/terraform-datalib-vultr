@@ -48,14 +48,6 @@ output "debian_8_i386" {
   value = local.os_zipped["Debian 8 i386 (jessie)"]
 }
 
-output "ubuntu_1604_x64" {
-  value = local.os_zipped["Ubuntu 16.04 x64"]
-}
-
-output "ubuntu_1604_i386" {
-  value = local.os_zipped["Ubuntu 16.04 i386"]
-}
-
 output "freebsd_11_x64" {
   value = local.os_zipped["FreeBSD 11 x64"]
 }
@@ -68,10 +60,6 @@ output "debian_9_x64" {
   value = local.os_zipped["Debian 9 x64 (stretch)"]
 }
 
-output "ubuntu_1804_x64" {
-  value = local.os_zipped["Ubuntu 18.04 x64"]
-}
-
 output "freebsd_12_x64" {
   value = local.os_zipped["FreeBSD 12 x64"]
 }
@@ -82,10 +70,6 @@ output "debian_10_x64" {
 
 output "centos_8_x64" {
   value = local.os_zipped["CentOS 8 x64"]
-}
-
-output "ubuntu_1910_x64" {
-  value = local.os_zipped["Ubuntu 19.10 x64"]
 }
 
 output "openbsd_66_x64" {
@@ -108,3 +92,22 @@ output "fedora_coreos" {
   value = local.os_zipped["Fedora CoreOS"]
 }
 
+output "ubuntu_1604_i386" {
+  value = local.os_zipped["Ubuntu 16.04 i386"]
+}
+
+output "ubuntu_1604_x64" {
+  value = local.os_zipped["Ubuntu 16.04 x64"]
+}
+
+output "ubuntu_1804_x64" {
+  value = local.os_zipped["Ubuntu 18.04 x64"]
+}
+
+output "ubuntu_1910_x64" {
+  value = local.os_zipped["Ubuntu 19.10 x64"]
+}
+
+output "ubuntu_2004_x64" {
+  value = local.os_zipped["Ubuntu 20.04 x64"]
+}
