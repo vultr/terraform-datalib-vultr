@@ -76,10 +76,6 @@ output "freebsd_12_x64" {
   value = local.os_zipped["FreeBSD 12 x64"]
 }
 
-output "fedora_30_x64" {
-  value = local.os_zipped["Fedora 30 x64"]
-}
-
 output "debian_10_x64" {
   value = local.os_zipped["Debian 10 x64 (buster)"]
 }
@@ -104,4 +100,11 @@ output "fedora_31_x64" {
   value = local.os_zipped["Fedora 31 x64"]
 }
 
+output "fedora_32_x64" {
+  value = local.os_zipped["Fedora 32 x64"]
+}
+
+output "fedora_coreos" {
+  value = local.os_zipped["Fedora CoreOS"]
+}
 
