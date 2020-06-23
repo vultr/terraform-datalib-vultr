@@ -72,3 +72,7 @@ output "sydney" {
   value = local.regions_zipped["Sydney"]
 }
 
+output "seoul" {
+  value = local.regions_zipped["Seoul"]
+}
+
