@@ -37,5 +37,5 @@ for id in plans:
     desc_text = f'{desc_type}: {description}'
     cpus = plans[id]['vcpu_count']
     ram = int(int(plans[id]['ram']) / 1024)
-    terraid = f'{prefix}-{cpus}vcpu-{ram}gb'
+    terraid = f'{prefix}_{cpus}vcpu_{ram}gb'
     print(template.substitute(name=terraid, desc=desc_text, id=id))
