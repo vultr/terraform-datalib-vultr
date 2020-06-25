@@ -1,4 +1,18 @@
 #!/usr/bin/python3
+"""Vultr Terraform plans generator
+
+This script generates a list of plans of all the Vultr VM for use with terraform.
+
+The script does not accept any arguments, and will simply output the result to stdout.
+
+Each entry should conform to the following example format;
+
+output "vdc-4vcpu-16gb" {
+    description = "Vultr Dedicated Cloud (VDC): 16384 MB RAM,2x110 GB SSD,20.00 TB BW"
+    value = 116
+}
+"""
+
 import json
 import requests
 from string import Template
