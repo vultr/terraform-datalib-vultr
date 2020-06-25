@@ -1,12 +1,3 @@
-data "http" "vultr_vserver_plans" {
-  url = "https://api.vultr.com/v1/plans/list"
-}
-
-locals {
-  plans = {for plan in values(jsondecode(data.http.vultr_vserver_plans.body))
-  : join("", [plan.vcpu_count, " VCPU,", plan.name]) => plan.VPSPLANID}
-}
-
 output "vc2-1vcpu-1gb" {
     description = "Vultr Cloud Compute (VC2): 1024 MB RAM,25 GB SSD,1.00 TB BW"
     value = 201
