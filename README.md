@@ -15,8 +15,8 @@ Use human readable module output names in place of Plans, Application, OS, or Re
 
 ```hcl
 resource "vultr_server" "server0" {
-  plan_id = module.vultr_lib.vc1_m1_s1x25 // 1x VCPU, 1GB RAM, 1x25GB SSD
-  plan_id = module.vultr_lib.vc2_m4_s1x80 // 2x VCPUs, 4GB RAM, 1x80GB SSD
+  plan_id = module.vultr_lib.vc2_1vcpu_1gb // 1x VCPU, 1GB RAM, 1x25GB SSD
+  plan_id = module.vultr_lib.vc2_2vcpu_4gb // 2x VCPUs, 4GB RAM, 1x80GB SSD
   region_id = module.vultr_lib.new_jersey
   # region_id = module.vultr_lib.atlanta
   # region_id = module.vultr_lib.dallas
